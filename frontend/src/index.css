@@ -1,0 +1,15 @@
+/* src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  background-color: #000;
+}
+
+footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 16px; /* Padding around footer */
+  margin-top: 32px; /* Space above footer */
+}
