@@ -11,12 +11,11 @@ import Services from './components/Services';
 import CadetProgram from './components/Program';
 import FAQ from './components/FAQ';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Fly from './components/Fly';
+import { motion } from 'framer-motion';
 
 
 const Home = () => (
   <div>
-    <NavBar/>
     <Carousel />
     <CadetProgram />
     <Services />
@@ -26,15 +25,16 @@ const Home = () => (
 
 const FAQPage = () => (
   <div>
-    <NavBar />
+    <div className='flex justify-center'><NavBar /></div>
     <FAQ />
+    <Footer/>
   </div>
 );
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App bg-black">
         <Routes>
           <Route path="/" element={<Home />} /> {/* Route for the home page */}
           {/* Add other routes here as needed */}
